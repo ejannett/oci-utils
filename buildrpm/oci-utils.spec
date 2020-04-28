@@ -40,6 +40,7 @@ Requires: %{name} = %{version}-%{release}
 %if 0%{?rhel} >= 8
 Requires: python3-netaddr
 Requires: network-scripts
+Requires: python3-libvirt
 %else
 Requires: python36-netaddr
 %endif
