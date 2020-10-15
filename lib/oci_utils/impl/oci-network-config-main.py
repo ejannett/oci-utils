@@ -478,7 +478,8 @@ def main():
     except Exception as e:
         __logger.warning("Cannot get vNIC information: %s" % str(e))
         __logger.debug('OCI SDK Error', exc_info=True)
-        return 1
+        
+        #return 1
 
     shape = None
     if args.detach_vnic:
